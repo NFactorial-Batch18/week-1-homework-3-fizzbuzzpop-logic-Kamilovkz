@@ -60,10 +60,7 @@ func solve(@gameMassiveBuilder elements: () -> Rules) -> Rules {
     return elements()
 }
 
-func makeGame(for name: String? = nil) -> Rules {
-    let solving = solve { Number(22) }
-    return solving
-}
+
 
 //Entering numbers....
 print("Enter number: ")
