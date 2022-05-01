@@ -43,7 +43,7 @@ struct Number: Rules {
     }
 }
 
-//Create resultBuilder Go --> 78 line
+//Create resultBuilder Go --> 64 line
 @resultBuilder struct gameMassiveBuilder {
     static func buildBlock(_ components: Rules...) -> Rules {
         return gameMassive(elements: components)
@@ -59,8 +59,6 @@ struct Number: Rules {
 func solve(@gameMassiveBuilder elements: () -> Rules) -> Rules {
     return elements()
 }
-
-
 
 //Entering numbers....
 print("Enter number: ")
